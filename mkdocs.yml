@@ -1,7 +1,7 @@
 site_name: tinakoziol.com
 site_description: Personal website of Dr Tina Koziol
 docs_dir: docs
-repo_url: "https://github.com/t1nak/t1nak.github.io"
+repo_url: "https://github.com/t1nak/"
 # Configuration
 theme:
   name: material
