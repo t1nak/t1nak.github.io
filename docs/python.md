@@ -31,7 +31,7 @@ I am an error message
 
 ## Maschine learning [notebook collection](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ).
 
-[![click link](https://lh4.googleusercontent.com/wg396DF6PPrFAttloxIBJLlFcxELpCrJI7OobigvFWQWVN7Vt47-sbCBmpOKxhY5gKqPsPJgJfTW79aje0vxdqimlHGvn9vUl2NBgMgxx77ms3jwKw=w1280)](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ)
+[![click link](pics/ml.png)](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ)
  
 ## Beginner python stuff 
 
