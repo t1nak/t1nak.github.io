@@ -33,7 +33,9 @@ I am an error message
 
 [![click link](https://lh4.googleusercontent.com/wg396DF6PPrFAttloxIBJLlFcxELpCrJI7OobigvFWQWVN7Vt47-sbCBmpOKxhY5gKqPsPJgJfTW79aje0vxdqimlHGvn9vUl2NBgMgxx77ms3jwKw=w1280)](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ)
  
-## Beginner python stuff
+## Beginner python stuff 
+
+[See here](/blog/2020/installpy/)
 
 
 	

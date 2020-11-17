@@ -19,7 +19,9 @@ nav:
     - Work in progress: research.md
   - Python for Economists: 
     - Why learn python: python.md
-    - 2020: 2020.md
+    - 2020: 
+        - Catalina and conda: blog/2020/Catalinaconda.md
+        - Install python: blog/2020/installpy.md
 
 extra_css:
     - css/extra.css
