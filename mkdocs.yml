@@ -22,7 +22,7 @@ nav:
     - Why learn python: python.md
     - 2020:
       - Analyse and Download SARB BA900: blog/2020/ba900-download.md
-      - Catalina: /blog/2020/Catalinaconda.md
+      - Catalina: blog/2020/Catalinaconda.md
       - Install python: blog/2020/installpy.md
 
 
