@@ -1,5 +1,5 @@
  
- Download [here](https://github.com/t1nak/t1nak.github.io/blob/master/docs/data/cv_academic_2020.pdf)  
+ Download [here](https://github.com/t1nak/t1nak.github.io/raw/master/docs/data/cv_academic_2020.pdf)  
 
 
 

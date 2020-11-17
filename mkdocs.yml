@@ -16,18 +16,20 @@ nav:
   - Home: index.md
   - Miscellaneous - Debate and Misinformation: debate.md
   - CV: cv.md
-
   - Research: 
     - Work in progress: research.md
   - Python for Economists: 
     - Why learn python: python.md
-        - Analyse SARB BA900 forms: blog/2020/ba900-download.md
-        - Catalina and conda: blog/2020/Catalinaconda.md
-        - Install python: blog/2020/installpy.md
+    - 2020:
+      - Analyse and Download SARB BA900: blog/2020/ba900-download.md
+      - Catalina: /blog/2020/Catalinaconda.md
+      - Install python: blog/2020/installpy.md
+
+
 extra_css:
     - css/extra.css
 
 # Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  - auto
+# google_analytics:
+#   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#   - auto
