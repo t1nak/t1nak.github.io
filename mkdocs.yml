@@ -21,11 +21,9 @@ nav:
     - Work in progress: research.md
   - Python for Economists: 
     - Why learn python: python.md
-    
-        - Download and analyse SARB BA900 forms: blog/2020/ba900-download.md
+        - Analyse SARB BA900 forms: blog/2020/ba900-download.md
         - Catalina and conda: blog/2020/Catalinaconda.md
         - Install python: blog/2020/installpy.md
-
 extra_css:
     - css/extra.css
 
