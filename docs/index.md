@@ -2,7 +2,7 @@
 
 # Hi there!
  <!-- <img style="float: right;" width="300" alt="" src="pics/bandtk.png"/> -->
-  <img style="float: left;" width="300" alt="" src="pics/bandtk.png"/>
+  <img style="float: left;" width="350" alt="" src="pics/bandtk.png"/>
  
  |   |  Overview |   
 | --- | ----------- |     
