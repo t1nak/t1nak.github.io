@@ -1,0 +1,30 @@
+site_name: tinakoziol.com
+
+# Configuration
+theme:
+  name: material
+  palette:
+    primary: indigo #blue grey
+
+  features:
+    - navigation.tabs 
+  language: en
+# Page tree
+nav:
+  - Home: index.md
+  - Miscellaneous - Debate and Misinformation: debate.md
+  - CV: cv.md
+
+  - Research: 
+    - Work in progress: research.md
+  - Python for Economists: 
+    - Why learn python: python.md
+    - 2020: 2020.md
+
+extra_css:
+    - css/extra.css
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
