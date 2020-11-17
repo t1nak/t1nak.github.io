@@ -29,7 +29,7 @@ I am an error message
 </div>
 
 
-## Maschine learning [notebook collection](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ).
+## Machine learning [notebook collection](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ).
 
 [![click link](pics/ml.png)](https://www.google.com/url?q=https%3A%2F%2Fdiegoinacio.github.io%2Fmachine-learning-notebooks%2F%3Ffbclid%3DIwAR0AwDmM7XbGVyaDqNcsIHhczC2tmlPRa5fXosZOl6BTM5co-DylLinYMCk&sa=D&sntz=1&usg=AFQjCNHBoJZY_UY1YwFqP8izhHJOkfCGrQ)
  

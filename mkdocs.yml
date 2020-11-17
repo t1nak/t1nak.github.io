@@ -1,5 +1,7 @@
 site_name: tinakoziol.com
-
+site_description: Personal website of Dr Tina Koziol
+docs_dir: docs
+repo_url: "https://github.com/t1nak/t1nak.github.io"
 # Configuration
 theme:
   name: material
@@ -20,6 +22,7 @@ nav:
   - Python for Economists: 
     - Why learn python: python.md
     - 2020: 
+        - Download and analyse SARB BA900 forms: blog/2020/ba900-download.md
         - Catalina and conda: blog/2020/Catalinaconda.md
         - Install python: blog/2020/installpy.md
 
