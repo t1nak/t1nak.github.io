@@ -1,14 +1,4 @@
-
-# Table of Contents
-* [Examples (in jupyter notebook)](#Examples-%28run-in-jupyter-notebook%29)
-
-	* [1. Start geogems and load images](#first-bullet)
-        * [Show wet and dry season from sentinel 2 images for Malawi](#firstb-bullet)
-            * [Dry season](#Dry-season)
-            * [Wet season](#Wet--season)
-	* [2. Load landcover satellite images](#second-bullet)
-
-
+Is geogems installed?
 
 ```python
 !pip search geogems
