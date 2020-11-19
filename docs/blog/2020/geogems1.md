@@ -92,8 +92,7 @@ maplc_malawai
     Map(center=[-12.8018637, 33.4752805], controls=(WidgetControl(options=['position'], widget=HBox(children=(Togg…
 
 
-![image]
-(https://warehouse-camo.ingress.cmh1.psfhosted.org/de3ba43fc8eb9586a1c774ebfbbece563cbcc9bd/68747470733a2f2f6769746875622e636f6d2f74316e616b2f67656f67656d732f626c6f622f6d61696e2f706963732f6d6f6469735f6c632e706e673f7261773d74727565)
+![image](https://warehouse-camo.ingress.cmh1.psfhosted.org/de3ba43fc8eb9586a1c774ebfbbece563cbcc9bd/68747470733a2f2f6769746875622e636f6d2f74316e616b2f67656f67656d732f626c6f622f6d61696e2f706963732f6d6f6469735f6c632e706e673f7261773d74727565)
 
 ```python
  
