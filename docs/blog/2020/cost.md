@@ -6,7 +6,7 @@
 ## Goal 
 
 Have study area raster/statistics where each pixel represents the minimum travel time to market
-- Problem is generalisable to incorparating additional components, e.g. perishable pressure
+- Problem is generalisable to incorparating additional components, e.g. perishable pressure of crops
 
 
 ### Background papers
