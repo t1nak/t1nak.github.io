@@ -66,7 +66,7 @@ map_malawai
 
     Map(bottom=17834.0, center=[-12.8018637, 33.4752805], controls=(WidgetControl(options=['position'], widget=HBo…
 
-[wet season](https://warehouse-camo.ingress.cmh1.psfhosted.org/afe8c02839ece956d3fe507fb45017b8d865841e/68747470733a2f2f6769746875622e636f6d2f74316e616b2f67656f67656d732f626c6f622f6d61696e2f706963732f73656e74696e656c5f7765745f736561736f6e2e706e673f7261773d74727565)
+![wet season](https://warehouse-camo.ingress.cmh1.psfhosted.org/afe8c02839ece956d3fe507fb45017b8d865841e/68747470733a2f2f6769746875622e636f6d2f74316e616b2f67656f67656d732f626c6f622f6d61696e2f706963732f73656e74696e656c5f7765745f736561736f6e2e706e673f7261773d74727565)
 
 ```python
 #Add image
@@ -92,7 +92,7 @@ maplc_malawai
     Map(center=[-12.8018637, 33.4752805], controls=(WidgetControl(options=['position'], widget=HBox(children=(Togg…
 
 
-[]
+![image]
 (https://warehouse-camo.ingress.cmh1.psfhosted.org/de3ba43fc8eb9586a1c774ebfbbece563cbcc9bd/68747470733a2f2f6769746875622e636f6d2f74316e616b2f67656f67656d732f626c6f622f6d61696e2f706963732f6d6f6469735f6c632e706e673f7261773d74727565)
 
 ```python
