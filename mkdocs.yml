@@ -21,6 +21,7 @@ nav:
   - Python for Economists: 
     - Why learn python: python.md
     - 2020:
+      - Geogems part 1: blog/2020/geogems1.md
       - Cost mapping for friction surfaces: blog/2020/cost.md
       - Uber's H3 grid: blog/2020/h3intro.md
       - Analyse and Download SARB BA900: blog/2020/ba900-download.md
