@@ -2,17 +2,22 @@
 # Cost mapping for friction surface
 
 
+Here are a few notes on one of my projects on friction surface mapping
 
 ## Goal 
 
 Have study area raster/statistics where each pixel represents the minimum travel time to market
-- Problem is generalisable to incorparating additional components, e.g. climate and seasonality to get perishable pressure of crops
+- Problem is generalisable to incorparating additional components, e.g. climate and seasonality to get perishable pressure of crop location
 
 
-### Background papers
+### Background - What is it
+
+These papers demonstrated how to do friction surface mapping on a global scale (in R)
+
 
 - Weiss, D., Nelson, A., Gibson, H. et al. **A global map of travel time to cities** to assess inequalities in accessibility in 2015. Nature 553, 333–336 (2018).  
-   - travel time to cities with more than 50,000 people
+		- travel time to cities with more than 50,000 people
+
 - Weiss, D.J., Nelson, A., Vargas-Ruiz, C.A. et al. 
    **Global maps of travel time to healthcare facilities**. Nat Med (2020)
 
@@ -25,7 +30,7 @@ Have study area raster/statistics where each pixel represents the minimum travel
 		- roads location data (OSM, Google)
 		- road speed data from OSM
 
-Requirements:
+## Requirements - What do we need
 
 - data structure (image/raster) in which each pixel represents the cost per meter to traverse it
 
@@ -34,7 +39,7 @@ Requirements:
 	- Terrain specifics (where no infrastructure exists)
 
 
-## Tools 
+## Tools - How to do it 
 
 When doing cost modelling, we're dealing with projected surfaces. When you accumulate costs over large projected surfaces, the pixel size represent different distances
 - but we need equal distance from any location!
