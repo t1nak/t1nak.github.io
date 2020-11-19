@@ -16,7 +16,7 @@
     
     
       
-        <title>Analyse and Download SARB BA900 - tinakoziol.com</title>
+        <title>Google earth engine functionality - tinakoziol.com</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#download-and-analyse-sarb-ba900-forms" class="md-skip">
+        <a href="#google-earth-engine-functionality" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Analyse and Download SARB BA900
+              Google earth engine functionality
             
           </span>
         </div>
@@ -155,9 +155,7 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -165,7 +163,9 @@
   <li class="md-tabs__item">
     
     
-    <a href="../../.." class="md-tabs__link">
+      
+    
+    <a href="../../.." class="md-tabs__link md-tabs__link--active">
       Home
     </a>
   </li>
@@ -194,9 +194,7 @@
     <li class="md-tabs__item">
       
       
-        
-      
-      <a href="../../../python/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../python/" class="md-tabs__link">
         Python for Economists
       </a>
     </li>
@@ -320,12 +318,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
     <label class="md-nav__link" for="nav-5">
       Python for Economists
       <span class="md-nav__icon md-icon"></span>
@@ -354,12 +350,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" >
     <label class="md-nav__link" for="nav-5-2">
       2020
       <span class="md-nav__icon md-icon"></span>
@@ -400,20 +394,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../ba900-download/" class="md-nav__link">
       Analyse and Download SARB BA900
     </a>
-    
   </li>
 
         
@@ -478,205 +463,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/t1nak/edit/master/docs/blog/2020/ba900-download.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/t1nak/edit/master/docs/blog/2020/ee.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="download-and-analyse-sarb-ba900-forms">Download and analyse SARB BA900 forms</h1>
-<p>This is a description of the ba900 programm at <a href="https://github.com/t1nak/ba900/">https://github.com/t1nak/ba900/</a></p>
-<p>Attention: requires <strong>python 2.7!</strong> Yes, the old one. I coded this up a long time ago.
-I will probably transcribe it to python 3 at some point. So long, you must create a python environment with python=2.7 because <code>basestring</code> is missing in python 3. </p>
-<p>Other dependencies: <code>lxml</code> and <code>more_itertools</code> (<a href="https://pypi.org/project/more-itertools/">pypi</a>)</p>
-<h1 id="get-the-south-african-reserve-bank-ba-900-forms">Get the South African Reserve Bank BA 900 forms</h1>
-<h2 id="time-series-of-sa-banks-balance-sheets-items">Time series of SA banks' balance sheets items</h2>
-<p><img alt="bubbles" src="https://github.com/t1nak/ba900/blob/main/data/bubbles_2015_2020.png?raw=true" /></p>
-<p><img alt="top4 portfolio weights" src="https://github.com/t1nak/ba900/blob/main/data/top4_mortgage_weights.png?raw=true" /></p>
-<p><img alt="top10 similarity full" src="https://github.com/t1nak/ba900/blob/main/data/similarity_2018_full.png?raw=true" /></p>
-<p>I provide the data as of 24 October 2020 in this repo.
-If you want to update and download yourself, use the following steps.</p>
-<h2 id="step-1">Step 1</h2>
-<p>Run this snippet to create the folder <code>data/downloaded</code> in your project directory and one for each year available on the website:</p>
-<pre><code>import os
-folder='data/downloaded'
-path = os.path.join(os.getcwd(),folder)
-years = [i for i in range(2008, 2021, 1)]
-
-for y in years:
-    if not os.path.exists(os.path.join(path,str(y))):
-        os.makedirs(path+str(y))
+                <h1 id="google-earth-engine-functionality">Google earth engine functionality</h1>
+<ul>
+<li><code>image.cumulativeCost()</code> to compute a cost map where every pixel contains the total cost of the lowest cost path to the nearest source location  <a href="https://developers.google.com/earth-engine/guides/image_cumulative_cost">source</a></li>
+</ul>
+<p>Need:
+    - need image in which each pixel represents the cost per meter to traverse it</p>
+<pre><code>- Impact factors in human travel
+    - Traffic network infrastructure
+    - Terrain specifics (where no infrastructure exists)
 </code></pre>
-<h2 id="step-2">Step 2</h2>
-<p>Download all the xml files from the SARB's <a href="https://www.resbank.co.za/Research/Statistics/Pages/Banks-BA900-Economic-Returns.aspx">homepage</a> and unzip into the corresponding folder. If I find time I will add a little selenium function to do this automatically, but it's very simple as it is :)</p>
-<h2 id="step-3">Step 3</h2>
-<p>To convert the data from xml to dataframe
-run <code>python ba900.py</code> or the following snipped with the folder name you just created. The script will extract all data from the xml files and save as <code>year.pkl</code> </p>
-<pre><code>import pandas as pd 
-from collections import Counter
-from lxml import etree
-import numpy as np
-import os, sys
-sys.path.insert(0,os.getcwd())
-from extract_data import *
-from iteration import *
-import pickle
-
-input = os.path.join(os.getcwd(), 'data/downloaded/')
-output = os.path.join(os.getcwd(), 'data/output/')
-
-if not os.path.exists(input): 
-    os.mkdir(input)
-
-if not os.path.exists(output): 
-    os.mkdir(output)
-
-years = [ 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
-
-data = save_yearly_data(years, folder)
-
-#This will save all years as one giant pickle (approx. 2GB)
-#Uncomment if you want this
-# filename =  os.path.join(folder, 'all_data.pickle')
-# with open(filename, 'wb') as f:
-#     pickle.dump(data, f)
-
-print('All done. Have fun analysing.')nt('All done. Have fun analysing.')
-
-</code></pre>
-<p>After calling ba900.py you should see something like this:
-<img alt="image" src="https://github.com/t1nak/ba900/blob/main/data/success_screenshot.png?raw=true" /></p>
-<p>So the banks and their respective monthly data are being processed.
-It takes about 30 to 40 min to run all the bank and years (2008 to 2020).</p>
-<h2 id="step-4">Step 4</h2>
-<p>Now you have the data - great. However, analysis of the data requires good understanding of the ba900 forms. 
-<a href="https://github.com/t1nak/ba900/blob/main/data/BA900-2008-12-31.csv">Here</a> is a csv for ABSA, December 2008.
-- <a href="https://raw.githubusercontent.com/t1nak/ba900/main/data/BA900-2008-12-31.csv">download link</a> </p>
-<p>There are <code>18 tables</code> and <code>383 unique Item numbers</code>. For example asset side positions are item numbers <code>103</code> to <code>277</code>.</p>
-<p>After familiarising yourself with the structure, you can load the pickled data and look at the time series with something like this</p>
-<pre><code>#load data
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import datetime
-file_list=[]
-for filename in os.listdir('./data/output/'):
-    if filename.endswith(&quot;.pkl&quot;):
-        unpickle = './data/output/'+str(filename)
-        print(unpickle)
-        file_list.append(pd.read_pickle(unpickle))
-
-
-MASTER = pd.concat(file_list)
-MASTER['time'] = pd.to_datetime(MASTER['time'])
-
-#print all column names
-print(MASTER.columns)
-</code></pre>
-<p>Print all banks in the data set with <code>print(MASTER['InstitutionDescription'].unique())</code></p>
-<p>Look at ABSA bank asset portfolio weights:</p>
-<pre><code>#need assets_to_weights.py 
-from assets_to_weights import *
-transform=tranformer()
-
-years=[str(i) for i in range(2008,2020, 1)]
-months=[&quot;{:02d}&quot;.format(i) for i in range(1,13)]
-
-helper_dict={}
-
-for y in years:
-    helper_dict[y]=months
-
-BANK = MASTER[MASTER['InstitutionDescription']=='ABSA BANK LTD ']
-BANK['Value'] = pd.to_numeric(BANK['Value'])
-
-bank_year_and_month = []
-for key in helper_dict.keys():
-    for month in helper_dict[key]:
-
-        df_bank_key_month =  BANK[(BANK['TheYear']==key)&amp;(BANK['TheMonth']==month)]
-#         print((month),(key),df_bank_key_month )
-        try:
-            bank_year_and_month.append(transform.get_pf_weights_by_bank_29(df_bank_key_month))
-        except:
-            pass
-
-absa=pd.concat(bank_year_and_month) 
-
-# we only need one entry per month - so select column code 7 and itemnumber 2 for example 
-absa_weights=absa[(absa['ColumnCode']=='7')&amp;(absa['ItemNumber']=='2')]
-absa_weights.index=absa_weights.time
-
-f = plt.figure()
-plt.title('ABSA portfolio weights', color='black')
-
-for column in absa_weights[absa.columns[-19:-10]]:
-    absa_weights[column].plot(legend=column, ax=f.gca())
-plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
-plt.show()
-
-</code></pre>
-<p><img alt="absa portfolio weights" src="https://github.com/t1nak/ba900/blob/main/data/absa_weights.png?raw=true" /></p>
-<p>So you can see the gradual decline in household mortgage credit in ABSA's balance sheet as a share of its total balance sheet size. </p>
-<p>For the top 4 banks:</p>
-<pre><code># show portfolio weights for absa's credit book
-from assets_to_weights import *
-
-transform=tranformer()
-
-years=[str(i) for i in range(2008,2021, 1)]
-months=[&quot;{:02d}&quot;.format(i) for i in range(1,13)]
-
-
-top5=[ 'ABSA BANK LTD ',\
-        'THE STANDARD BANK OF S A LTD ',\
-        MASTER[MASTER['InstitutionDescription'].str.contains('NEDBANK')]['InstitutionDescription'].values[0],\
-        MASTER[MASTER['InstitutionDescription'].str.contains('FIRSTRAND')]['InstitutionDescription'].values[0],\
-        MASTER[MASTER['InstitutionDescription'].str.contains('CAPITEC BANK')]['InstitutionDescription'].values[0]
-      ]
-
-df=MASTER[MASTER.InstitutionDescription.isin(top5)]
-arr = np.empty((0,len(df[df['InstitutionDescription'].str.contains('ABSA BANK LTD ')].time.unique()))) 
-
-for b in top5:
-    test=transform.get_bankdata(years,months,df, b)
-
-    # # we only need one entry per month - so select column code 7 and itemnumber 2 for example 
-    test_weights=test[(test['ColumnCode']=='7')&amp;(test['ItemNumber']=='2')]
-    test_weights.index=test_weights.time
-    # f = plt.figure()
-    # plt.title('ABSA portfolio weights', color='black') 
-    # for column in test_weights[test.columns[-19:-10]]:
-    #     test_weights[column].plot(legend=column, ax=f.gca())
-    # plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
-    # plt.show()
-    weights_only=test_weights[test_weights.columns[-29:]] 
-    d=weights_only.filter(like='Household_mortgages').squeeze().values 
-    arr=np.vstack((arr,d))
-
-import matplotlib.pyplot as plt
-
-top5=[ 'ABSA BANK LTD ',\
-        'THE STANDARD BANK OF S A LTD ',\
-        MASTER[MASTER['InstitutionDescription'].str.contains('NEDBANK')]['InstitutionDescription'].values[0],\
-        MASTER[MASTER['InstitutionDescription'].str.contains('FIRSTRAND')]['InstitutionDescription'].values[0],\
-        MASTER[MASTER['InstitutionDescription'].str.contains('CAPITEC BANK')]['InstitutionDescription'].values[0]
-      ]
-
-f = plt.figure()
-plt.title('Household mortgage portfolio weights', color='black')
-
-for i,name in zip(arr[:-1],top5[:-1]):
-    plt.plot(test_weights.time,i , label=name)
-
-plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
-plt.show()
-</code></pre>
-<p>Euclidean distances betwenn top 10 banks (dec 2018): </p>
-<p><img alt="top10 similarity half" src="https://github.com/t1nak/ba900/blob/main/data/similarity_2018_fhalf.png?raw=true" /></p>
-<p>You can check some examples in the <code>exame_analyse.ipynb</code> notebook. </p>
-<p>Write me if you have questions. There is a lot of 
-scope to make this more user-friendly and if I get more feedback I will gladly do so. However, for my own purposes it has been sufficient like it is. </p>
                 
               
               
@@ -691,41 +492,6 @@ scope to make this more user-friendly and if I get more feedback I will gladly d
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../h3intro/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Uber's H3 grid
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../Catalinaconda/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Catalina
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
